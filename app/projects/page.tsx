@@ -3,95 +3,79 @@ import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Github } from "lucide-react"
 
-// Mock projects data
-const projects = [
+const featuredProjects = [
   {
     id: 1,
-    title: "Typography Portfolio",
+    title: "Generative-AI 3D Avatar Assistant – Swisscom",
     description:
-      "A minimalist portfolio website for a typography designer, featuring a clean layout and beautiful typography.",
-    technologies: ["Next.js", "Tailwind CSS", "Framer Motion"],
+      "Voice-enabled 3D generative-AI customer-service assistant for Swisscom's Digital Customer-Experience unit. Achieves <400 ms speech-to-avatar latency and autonomously resolves 78% of Tier-1 support queries using a GPT-4o RAG pipeline with pgvector, MetaHuman lip-sync, and WebRTC streaming.",
+    technologies: ["Next.js 14", "FastAPI", "GPT-4o", "LangChain", "pgvector", "Supabase", "WebRTC", "Web Speech API", "Unreal Engine MetaHuman", "Docker", "GitHub Actions"],
     image: "/placeholder.svg?height=600&width=800",
-    slug: "typography-portfolio",
-    type: "hosted", // hosted project
+    type: "featured",
   },
   {
     id: 2,
-    title: "E-commerce Platform",
+    title: "AdversEco – AI-Powered Digital Ad Creation SaaS",
     description:
-      "A full-featured e-commerce platform with product management, cart functionality, and payment processing.",
-    technologies: ["React", "Node.js", "MongoDB", "Stripe"],
+      "AI-driven SaaS platform that automates digital advertisement creation using OpenAI generative models. Features OAuth-integrated direct publishing to Instagram, LinkedIn, Twitter, and Facebook with real-time ad generation and scheduling via a Heroku-deployed backend.",
+    technologies: ["Next.js", "JavaScript", "OpenAI API", "Heroku", "OAuth 2.0", "REST APIs", "Instagram API", "LinkedIn API"],
     image: "/placeholder.svg?height=600&width=800",
-    slug: "ecommerce-platform",
-    type: "hosted", // hosted project
+    type: "featured",
   },
+]
+
+const githubProjects = [
   {
     id: 3,
-    title: "Content Management System",
-    description: "A custom CMS built for a publishing company, allowing easy content creation and management.",
-    technologies: ["Next.js", "GraphQL", "PostgreSQL"],
+    title: "Social Media Platform (Ruby on Rails)",
+    description:
+      "Full-featured social networking application with user profiles, friend requests, posts, comments, likes, and real-time messaging via Action Cable with Redis. Includes Devise auth, CarrierWave uploads, and PostgreSQL data management.",
+    technologies: ["Ruby on Rails", "PostgreSQL", "Redis", "Action Cable", "Devise", "CarrierWave", "Bootstrap", "jQuery"],
+    githubUrl: "https://github.com/aaviix",
     image: "/placeholder.svg?height=600&width=800",
-    slug: "content-management-system",
-    type: "hosted", // hosted project
   },
   {
     id: 4,
-    title: "Algorithm Visualizer",
-    description: "A tool for visualizing common algorithms like sorting, pathfinding, and graph traversal algorithms.",
-    technologies: ["JavaScript", "Canvas API", "Data Structures"],
-    githubUrl: "https://github.com/johndoe/algorithm-visualizer",
+    title: "Emotion Detection in Tweets – LSTM from Scratch",
+    description:
+      "End-to-end LSTM model classifying 20K+ tweets into six emotions (joy, sadness, anger, fear, love, surprise). Achieves 92% test accuracy with full preprocessing pipeline, t-SNE embedding visualizations, and confusion matrix evaluation.",
+    technologies: ["Python", "PyTorch", "NLP", "LSTM", "Scikit-learn", "Matplotlib", "Pandas", "NumPy"],
+    githubUrl: "https://github.com/aaviix",
     image: "/placeholder.svg?height=600&width=800",
-    type: "github", // GitHub-only project
   },
   {
     id: 5,
-    title: "Compiler Design Project",
-    description: "A simple compiler implementation that demonstrates lexical analysis, parsing, and code generation.",
-    technologies: ["C++", "LLVM", "Automata Theory"],
-    githubUrl: "https://github.com/johndoe/mini-compiler",
-    image: "/placeholder.svg?height=600&width=800",
-    type: "github", // GitHub-only project
-  },
-  {
-    id: 6,
-    title: "Operating System Kernel",
+    title: "U-WaTCH Research Application – MHH",
     description:
-      "A minimal operating system kernel implementing basic process scheduling, memory management, and file systems.",
-    technologies: ["C", "Assembly", "OS Theory"],
-    githubUrl: "https://github.com/johndoe/mini-os",
+      "Application development supporting the U-WaTCH pediatric pulmonology research project at Medizinische Hochschule Hannover. Streamlines data entry and workflow automation for the interdisciplinary research team.",
+    technologies: ["Python", "Data Analytics", "Application Development", "Research Workflows"],
+    githubUrl: "https://github.com/aaviix",
     image: "/placeholder.svg?height=600&width=800",
-    type: "github", // GitHub-only project
   },
 ]
 
 export default function ProjectsPage() {
-  // Separate hosted and GitHub-only projects
-  const hostedProjects = projects.filter((project) => project.type === "hosted")
-  const githubProjects = projects.filter((project) => project.type === "github")
-
   return (
     <div className="pt-20">
       <section className="container-custom section-spacing">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h1 className="heading-xl mb-6">Projects</h1>
           <p className="body-lg text-muted-foreground">
-            A showcase of my work, featuring web applications, design projects, and experiments.
+            A showcase of my work in Generative AI, RAG systems, machine learning, and full-stack development.
           </p>
         </div>
 
-        {/* Hosted Projects */}
+        {/* Featured Projects */}
         <div className="mb-24">
           <h2 className="heading-lg mb-10 relative">
-            Web Projects
+            Featured Projects
             <span className="absolute -z-10 text-[8rem] font-bold text-muted/20 -top-16 -left-6 opacity-80">01</span>
           </h2>
 
           <div className="grid gap-16 md:gap-24">
-            {hostedProjects.map((project, index) => (
+            {featuredProjects.map((project, index) => (
               <div key={project.id} className="group">
-                <div
-                  className={`grid md:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? "md:grid-flow-dense" : ""}`}
-                >
+                <div className={`grid md:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? "md:grid-flow-dense" : ""}`}>
                   <div className={index % 2 === 1 ? "md:col-start-2" : ""}>
                     <span className="text-8xl font-bold text-muted/30 group-hover:text-muted/50 transition-colors">
                       {(index + 1).toString().padStart(2, "0")}
@@ -107,14 +91,6 @@ export default function ProjectsPage() {
                         </span>
                       ))}
                     </div>
-                    <Button
-                      asChild
-                      variant="outline"
-                      size="lg"
-                      className="group-hover:bg-primary group-hover:text-primary-foreground transition-colors"
-                    >
-                      <Link href={`/projects/${project.slug}`}>View Project</Link>
-                    </Button>
                   </div>
                   <div className={`overflow-hidden rounded-lg ${index % 2 === 1 ? "md:col-start-1" : ""}`}>
                     <div className="aspect-video bg-muted rounded-lg overflow-hidden transition-transform group-hover:scale-105 duration-500">
@@ -133,16 +109,15 @@ export default function ProjectsPage() {
           </div>
         </div>
 
-        {/* GitHub-only Projects */}
+        {/* ML & Engineering Projects */}
         <div>
           <h2 className="heading-lg mb-10 relative">
-            Deep CS Projects
+            ML & Engineering Projects
             <span className="absolute -z-10 text-[8rem] font-bold text-muted/20 -top-16 -left-6 opacity-80">02</span>
           </h2>
 
           <p className="text-xl text-muted-foreground mb-10 max-w-3xl">
-            These projects focus on computer science fundamentals and systems programming. They're available on GitHub
-            for code review and educational purposes.
+            Deep machine learning research, full-stack systems, and applied AI projects available on GitHub.
           </p>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">

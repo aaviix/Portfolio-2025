@@ -17,9 +17,9 @@ const playfair = Playfair_Display({
 })
 
 export const metadata: Metadata = {
-  title: "Avanish Singh | Full Stack Developer",
-  description: "Portfolio of Avanish Singh, a Full Stack Developer specializing in React, Next.js, and Node.js",
-    generator: 'v0.dev'
+  title: "Avanish Singh | Machine Learning Engineer & Generative AI Specialist",
+  description: "Portfolio of Avanish Singh, a Machine Learning Engineer specializing in Generative AI, RAG pipelines, and data analytics solutions.",
+  generator: 'v0.dev'
 }
 
 export default function RootLayout({

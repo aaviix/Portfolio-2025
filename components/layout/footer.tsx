@@ -11,7 +11,7 @@ export function Footer() {
               Avanish<span className="text-muted-foreground">Singh</span>
             </Link>
             <p className="mt-4 text-muted-foreground">
-              Full Stack Developer specializing in creating beautiful, functional websites and applications.
+              Machine Learning Engineer specializing in Generative AI, RAG pipelines, and data-driven applications.
             </p>
           </div>
 
@@ -44,7 +44,7 @@ export function Footer() {
           <div>
             <h3 className="text-xl font-medium mb-4">Connect</h3>
             <div className="flex space-x-4">
-              <a href="singhavanish8642@gmail.com" className="text-muted-foreground hover:text-foreground transition-colors">
+              <a href="mailto:singhavanish8642@gmail.com" className="text-muted-foreground hover:text-foreground transition-colors">
                 <Mail className="h-6 w-6" />
                 <span className="sr-only">Email</span>
               </a>
