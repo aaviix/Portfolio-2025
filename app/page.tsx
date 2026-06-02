@@ -13,14 +13,14 @@ export default function HomePage() {
             <div>
               <p className="text-muted-foreground text-lg mb-2 font-medium">Hello, I'm</p>
               <h1 className="heading-xl mb-4">Avanish Singh</h1>
-              <h2 className="heading-md text-muted-foreground">Machine Learning Engineer & Generative AI Specialist</h2>
+              <h2 className="heading-md text-muted-foreground">AI Engineer</h2>
             </div>
             <p className="body-lg text-muted-foreground max-w-md">
-              Machine Learning professional with 5 years of experience in data analytics and AI, expert in model development, RAG techniques, and building scalable generative AI systems.
+              Building production-grade generative AI systems — RAG pipelines, LLM applications, and applied machine learning.
             </p>
             <div className="flex flex-wrap gap-4">
               <Button asChild size="lg" className="text-lg px-8">
-                <Link href="/#contact">Contact Me</Link>
+                <Link href="/#contact">Get In Touch</Link>
               </Button>
               <Button asChild variant="outline" size="lg" className="text-lg px-8">
                 <Link href="/projects">View Projects</Link>
@@ -59,13 +59,13 @@ export default function HomePage() {
           </div>
           <div className="md:col-span-2">
             <p className="body-lg mb-6">
-              Machine Learning professional with 5 years of experience in data analytics and AI specialization, expert in machine learning model development and RAG techniques.
+              I'm a final-year AI student at Technische Hochschule Deggendorf (Grade: 1.7), with hands-on industry experience shipping production generative AI systems.
             </p>
             <p className="body-lg mb-6">
-              Key achievements include developing a generative AI model that improved accuracy by 25%, and integrating advanced data analytics solutions that increased efficiency by 30%. Currently pursuing a Bachelor of Artificial Intelligence at Technische Hochschule Deggendorf (Grade: 1.7).
+              At Swisscom, I built a GPT-4o RAG pipeline that reduced hallucinations by 40% and a real-time voice-to-avatar assistant with sub-400 ms latency. I'm currently contributing to AI-assisted research tooling at Medizinische Hochschule Hannover, and previously worked as an ML Engineer at KOgenie, where I deployed predictive models that improved forecasting accuracy by 25%.
             </p>
             <p className="body-lg mb-10">
-              My mission is to continue exploring and redefining the intersection where technology meets real-world impact — leveraging AI to build systems that solve complex, meaningful problems.
+              I'm looking for a full-time AI Engineer role — particularly in LLM applications, RAG architecture, or applied ML for real-world products.
             </p>
             <div className="flex flex-wrap gap-4">
               <Button asChild variant="outline" size="lg">
@@ -89,12 +89,13 @@ export default function HomePage() {
             </h2>
           </div>
           <div className="md:col-span-2 space-y-12">
+
             {/* MHH */}
             <div className="border-l-2 border-border pl-8 relative">
               <div className="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-foreground"></div>
-              <div className="flex flex-wrap gap-2 items-center mb-1">
+              <div className="flex flex-wrap gap-4 items-center mb-1">
                 <span className="text-sm text-muted-foreground flex items-center gap-1">
-                  <Calendar className="h-3 w-3" /> 05/2025 – Present
+                  <Calendar className="h-3 w-3" /> May 2025 – Present
                 </span>
                 <span className="text-sm text-muted-foreground flex items-center gap-1">
                   <MapPin className="h-3 w-3" /> Hannover, Germany
@@ -102,39 +103,38 @@ export default function HomePage() {
               </div>
               <h3 className="text-2xl font-bold mb-1">Student Research Assistant</h3>
               <p className="text-primary font-medium mb-3">Medizinische Hochschule Hannover (MHH)</p>
-              <ul className="space-y-2 text-muted-foreground">
-                <li>Contributing to the U-WaTCH project, a pediatric pulmonology and allergology research initiative at University Medical Center Hannover.</li>
-                <li>Handling data entry, programming tasks, and assisting in application development to streamline research workflows.</li>
-                <li>Collaborating with Prof. Dr. Christine Happle, Frank Mueller, and the interdisciplinary team.</li>
+              <ul className="space-y-2 text-muted-foreground list-none">
+                <li>Developed software tooling to streamline data workflows for the U-WaTCH pediatric pulmonology research project.</li>
+                <li>Collaborated with Prof. Dr. Christine Happle and Frank Mueller on interdisciplinary research across programming, data entry, and application development.</li>
               </ul>
             </div>
 
             {/* Swisscom */}
             <div className="border-l-2 border-border pl-8 relative">
               <div className="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-foreground"></div>
-              <div className="flex flex-wrap gap-2 items-center mb-1">
+              <div className="flex flex-wrap gap-4 items-center mb-1">
                 <span className="text-sm text-muted-foreground flex items-center gap-1">
-                  <Calendar className="h-3 w-3" /> 03/2025 – 08/2025
+                  <Calendar className="h-3 w-3" /> Mar 2025 – Aug 2025
                 </span>
                 <span className="text-sm text-muted-foreground flex items-center gap-1">
                   <MapPin className="h-3 w-3" /> Deggendorf, Germany
                 </span>
               </div>
-              <h3 className="text-2xl font-bold mb-1">AI Project – Academic Partnership</h3>
+              <h3 className="text-2xl font-bold mb-1">AI Engineer — Academic Partnership</h3>
               <p className="text-primary font-medium mb-3">Swisscom</p>
-              <ul className="space-y-2 text-muted-foreground">
-                <li>Prototyped a voice-enabled 3D generative-AI assistant achieving &lt;400 ms speech-to-avatar latency.</li>
-                <li>Built a RAG pipeline (GPT-4o + LangChain + pgvector) that cut hallucinations 40% vs. baseline FAQ bot.</li>
-                <li>Integrated real-time lip-sync with Unreal Engine MetaHuman, WebRTC streaming, and Web Speech API.</li>
+              <ul className="space-y-2 text-muted-foreground list-none">
+                <li>Built a GPT-4o RAG pipeline (LangChain + pgvector) that reduced hallucinations by 40% compared to Swisscom's baseline FAQ bot.</li>
+                <li>Prototyped a voice-enabled 3D customer service avatar achieving &lt;400 ms speech-to-render latency using WebRTC and Unreal Engine MetaHuman.</li>
+                <li>Deployed Dockerised FastAPI and Next.js microservices with CI/CD via GitHub Actions and Supabase Edge Functions.</li>
               </ul>
             </div>
 
             {/* KOgenie */}
             <div className="border-l-2 border-border pl-8 relative">
               <div className="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-foreground"></div>
-              <div className="flex flex-wrap gap-2 items-center mb-1">
+              <div className="flex flex-wrap gap-4 items-center mb-1">
                 <span className="text-sm text-muted-foreground flex items-center gap-1">
-                  <Calendar className="h-3 w-3" /> 08/2024 – 02/2025
+                  <Calendar className="h-3 w-3" /> Aug 2024 – Feb 2025
                 </span>
                 <span className="text-sm text-muted-foreground flex items-center gap-1">
                   <MapPin className="h-3 w-3" /> New Delhi, India
@@ -142,12 +142,12 @@ export default function HomePage() {
               </div>
               <h3 className="text-2xl font-bold mb-1">Machine Learning Engineer</h3>
               <p className="text-primary font-medium mb-3">KOgenie E-solutions</p>
-              <ul className="space-y-2 text-muted-foreground">
-                <li>Modeled and deployed AI-driven solutions, reducing operational costs by 15%.</li>
-                <li>Improved predictive models (Random Forest, Neural Networks) that increased forecasting accuracy by 25%.</li>
-                <li>Implemented and automated data pipelines using Python & SQL, reducing data processing time by 40%.</li>
+              <ul className="space-y-2 text-muted-foreground list-none">
+                <li>Designed and deployed predictive models (Random Forest, Neural Networks) that improved forecasting accuracy by 25%.</li>
+                <li>Built automated Python/SQL data pipelines, reducing processing time by 40% and operational costs by 15%.</li>
               </ul>
             </div>
+
           </div>
         </div>
       </section>
@@ -168,29 +168,29 @@ export default function HomePage() {
           {[
             {
               num: "01",
-              title: "Generative-AI 3D Avatar – Swisscom",
+              title: "GenAI 3D Avatar — Swisscom",
               description:
-                "Voice-enabled 3D generative-AI customer-service assistant achieving <400 ms speech-to-avatar latency, autonomously resolving 78% of Tier-1 support queries using GPT-4o and MetaHuman.",
-              tags: ["Next.js 14", "FastAPI", "GPT-4o", "LangChain", "pgvector", "WebRTC", "Unreal Engine"],
+                "Voice-to-avatar customer service assistant for Swisscom's Digital CX team. GPT-4o RAG pipeline (LangChain + pgvector) reduced hallucinations by 40%. Real-time lip-sync via Unreal Engine MetaHuman over WebRTC achieved sub-400 ms latency, autonomously handling 78% of Tier-1 queries.",
+              tags: ["GPT-4o", "LangChain", "pgvector", "FastAPI", "Next.js 14", "WebRTC", "Unreal Engine", "Docker"],
             },
             {
               num: "02",
-              title: "AdversEco – AI-Powered Ad SaaS",
+              title: "Emotion Detection — LSTM from Scratch",
               description:
-                "AI-driven SaaS platform automating digital advertisement creation with OpenAI generative models, OAuth-integrated social media publishing (Instagram, LinkedIn, Twitter, Facebook), and real-time scheduling.",
-              tags: ["Next.js", "JavaScript", "OpenAI API", "Heroku", "OAuth", "REST APIs"],
+                "End-to-end NLP pipeline classifying 20K+ tweets into six emotion categories. Built a deep LSTM with embedding layer, stacked LSTMs, and dropout regularisation from scratch — achieving 0.92 F1-score. Validated with confusion matrices and t-SNE embedding visualisations.",
+              tags: ["Python", "PyTorch", "NLP", "LSTM", "Scikit-learn", "Pandas", "Matplotlib"],
             },
             {
               num: "03",
-              title: "Emotion Detection – LSTM from Scratch",
+              title: "AdversEco — AI Ad Creation SaaS",
               description:
-                "End-to-end LSTM model classifying tweets into six emotions (joy, sadness, anger, fear, love, surprise), achieving 92% test accuracy with t-SNE embedding visualizations on 20K+ tweets.",
-              tags: ["Python", "PyTorch", "NLP", "LSTM", "Scikit-learn", "Matplotlib"],
+                "SaaS platform that automates digital ad creation using OpenAI generative models, with OAuth-integrated direct publishing to Instagram, LinkedIn, Twitter, and Facebook. Built with real-time scheduling and a Next.js frontend.",
+              tags: ["OpenAI API", "Next.js", "Node.js", "OAuth 2.0", "REST APIs", "Heroku"],
             },
-          ].map((project) => (
+          ].map((project, i) => (
             <div key={project.num} className="group">
-              <div className="grid md:grid-cols-2 gap-12 items-center">
-                <div>
+              <div className={`grid md:grid-cols-2 gap-12 items-center ${i % 2 === 1 ? "md:grid-flow-dense" : ""}`}>
+                <div className={i % 2 === 1 ? "md:col-start-2" : ""}>
                   <span className="text-8xl font-bold text-muted/30 group-hover:text-muted/50 transition-colors">
                     {project.num}
                   </span>
@@ -206,10 +206,10 @@ export default function HomePage() {
                     ))}
                   </div>
                   <Button asChild variant="outline" size="lg" className="group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
-                    <Link href="/projects">View Project</Link>
+                    <Link href="/projects">View Details</Link>
                   </Button>
                 </div>
-                <div className="overflow-hidden rounded-lg">
+                <div className={`overflow-hidden rounded-lg ${i % 2 === 1 ? "md:col-start-1" : ""}`}>
                   <div className="aspect-video bg-muted rounded-lg overflow-hidden transition-transform group-hover:scale-105 duration-500">
                     <Image
                       src="/placeholder.svg?height=270&width=480"
@@ -239,19 +239,15 @@ export default function HomePage() {
             {[
               {
                 category: "AI & Machine Learning",
-                skills: ["Generative AI", "RAG", "LangChain", "LLMs", "Deep Learning", "NLP", "TensorFlow", "PyTorch", "Scikit-learn", "MLOps", "OpenCV", "EmbeddChain"],
+                skills: ["Python", "PyTorch", "TensorFlow", "Scikit-learn", "LangChain", "RAG", "LLMs", "NLP", "Deep Learning", "OpenCV"],
               },
               {
-                category: "Programming",
-                skills: ["Python", "JavaScript", "TypeScript", "Ruby on Rails", "Java", "Rust", "React", "Next.js", "Node.js", "Flask", "FastAPI", "VueJS"],
+                category: "Engineering & Infrastructure",
+                skills: ["FastAPI", "Docker", "PostgreSQL", "Redis", "AWS", "GitHub Actions", "CI/CD", "Linux", "Supabase"],
               },
               {
-                category: "Cloud & DevOps",
-                skills: ["Docker", "Kubernetes", "AWS", "Azure", "Vercel", "Heroku", "GitHub Actions", "CI/CD", "Linux"],
-              },
-              {
-                category: "Databases",
-                skills: ["PostgreSQL", "MongoDB", "Supabase", "Redis", "GraphQL", "SQL", "Prisma", "SQLAlchemy"],
+                category: "Application Development",
+                skills: ["React", "Next.js", "TypeScript", "Node.js", "REST APIs", "WebRTC"],
               },
             ].map((group) => (
               <div key={group.category}>
@@ -281,31 +277,17 @@ export default function HomePage() {
           <div className="md:col-span-2 space-y-10">
             <div className="border-l-2 border-border pl-8 relative">
               <div className="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-foreground"></div>
-              <div className="flex flex-wrap gap-2 items-center mb-1">
+              <div className="flex flex-wrap gap-4 items-center mb-1">
                 <span className="text-sm text-muted-foreground flex items-center gap-1">
-                  <Calendar className="h-3 w-3" /> 10/2022 – Present
+                  <Calendar className="h-3 w-3" /> Oct 2022 – Present
                 </span>
                 <span className="text-sm text-muted-foreground flex items-center gap-1">
                   <MapPin className="h-3 w-3" /> Deggendorf, Germany
                 </span>
               </div>
-              <h3 className="text-2xl font-bold mb-1">Bachelor of Artificial Intelligence</h3>
+              <h3 className="text-2xl font-bold mb-1">B.Sc. Artificial Intelligence</h3>
               <p className="text-primary font-medium mb-2">Technische Hochschule Deggendorf</p>
-              <p className="text-muted-foreground">Grade: 1.7 · Python Programming, Data Science, NLP, Machine Learning</p>
-            </div>
-            <div className="border-l-2 border-border pl-8 relative">
-              <div className="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-foreground"></div>
-              <div className="flex flex-wrap gap-2 items-center mb-1">
-                <span className="text-sm text-muted-foreground flex items-center gap-1">
-                  <Calendar className="h-3 w-3" /> 03/2018 – 03/2020
-                </span>
-                <span className="text-sm text-muted-foreground flex items-center gap-1">
-                  <MapPin className="h-3 w-3" /> New Delhi, India
-                </span>
-              </div>
-              <h3 className="text-2xl font-bold mb-1">High School Diploma</h3>
-              <p className="text-primary font-medium mb-2">Amrita Vidyalayam</p>
-              <p className="text-muted-foreground">Grade: 1.5 · Physics, Chemistry, Mathematics, Computer Science</p>
+              <p className="text-muted-foreground">Grade: 1.7 (German scale) · Python, Data Science, NLP, Machine Learning</p>
             </div>
           </div>
         </div>
@@ -323,7 +305,7 @@ export default function HomePage() {
         <div className="grid md:grid-cols-2 gap-16">
           <div>
             <p className="text-2xl leading-relaxed mb-10">
-              I'm always open to new opportunities and collaborations. Feel free to reach out!
+              I'm actively looking for full-time AI Engineer roles. If you're working on interesting problems with LLMs, RAG, or applied ML — let's talk.
             </p>
             <div className="flex flex-col gap-6">
               <a href="mailto:singhavanish8642@gmail.com" className="flex items-center gap-4 text-xl text-muted-foreground hover:text-foreground group">
@@ -340,7 +322,7 @@ export default function HomePage() {
               </a>
               <div className="flex items-center gap-4 text-xl text-muted-foreground">
                 <MapPin className="h-6 w-6" />
-                <span>Deggendorf, Germany</span>
+                <span>Deggendorf, Germany · Open to relocation</span>
               </div>
             </div>
           </div>

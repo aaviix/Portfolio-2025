@@ -17,8 +17,8 @@ const playfair = Playfair_Display({
 })
 
 export const metadata: Metadata = {
-  title: "Avanish Singh | Machine Learning Engineer & Generative AI Specialist",
-  description: "Portfolio of Avanish Singh, a Machine Learning Engineer specializing in Generative AI, RAG pipelines, and data analytics solutions.",
+  title: "Avanish Singh | AI Engineer",
+  description: "AI Engineer building production RAG pipelines, LLM applications, and applied ML systems. Open to full-time roles.",
   generator: 'v0.dev'
 }
 
